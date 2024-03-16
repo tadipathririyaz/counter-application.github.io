@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+    <style>
+        .counter-container{
+
+           background-color: aqua;
+           width: 40%;
+           height: 320px;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           font-size: 20px;
+           overflow: auto;
+        }
+        .body{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to right,red,black,blue);
+            height: 100vh;
+        }
+        .para{
+            background-image: radial-gradient(white,grey);
+            height: 70px;
+            width: 60px;
+          padding-top: px;
+          font-size: 40px;
+           
+           padding-left: 30px;
+            
+        }
+        .btn{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+           margin-bottom: 10px;
+          
+        }
+        .b1{
+            font-size: 30px;
+            width: 80px;
+            overflow: auto;
+            margin-right: 40px;
+        }
+        .b2{
+            font-size: 30px;
+            width: 90px;
+            overflow: auto;
+            padding-right: 10px;
+            margin-right: 40px;
+        }
+        .b3{
+            font-size: 30px;
+            width: 80px;
+            overflow: auto;
+        }
+        
+    </style>
+    
+</head>
+<body >
+   <div class="body" col-12 >
+        <div class="counter-container">
+            <h1 id="heading" class="heading">
+                Counter Application
+            </h1>
+           
+            <p id="counterValue" class="para" > 0 </p>
+            <div class="btn">
+                <button class="b1" onclick="onDec()"> Dec</button>
+                <button class="b2" onclick="onReset()"> Reset</button>
+                <button class="b3" onclick="onInc()"> Inc</button>
+            </div>
+        </div>
+   </div>
+   <script src="counter.js"></script>
+   
+</body>
+</html>
